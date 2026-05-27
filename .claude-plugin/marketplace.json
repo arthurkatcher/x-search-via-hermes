@@ -5,13 +5,13 @@
     "email": "arthurkatcher@users.noreply.github.com"
   },
   "metadata": {
-    "description": "Claude Code and Codex plugin for searching X/Twitter posts, latest news, and public discussion through Hermes Agent and xAI/Grok OAuth.",
+    "description": "Universal Agent Skill for X/Twitter search through Hermes Agent and xAI/Grok OAuth, installable as a Claude Code or Codex plugin.",
     "version": "1.0.0"
   },
   "plugins": [
     {
       "name": "x-search-via-hermes",
-      "description": "Search X/Twitter posts, latest news, reactions, account posts, and public discussion through Hermes x_search.",
+      "description": "Agent Skill for searching X/Twitter posts, latest news, reactions, account posts, and public discussion through Hermes x_search.",
       "version": "1.0.0",
       "author": {
         "name": "Arthur Katcher",

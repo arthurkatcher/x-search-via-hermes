@@ -1,7 +1,7 @@
 {
   "name": "x-search-via-hermes",
   "version": "1.0.0",
-  "description": "Search X/Twitter posts, latest news, social reactions, account posts, and public discussion through Hermes x_search and xAI/Grok OAuth.",
+  "description": "Universal Agent Skill for X/Twitter search through Hermes x_search and xAI/Grok OAuth, installable as a Codex plugin.",
   "author": {
     "name": "Arthur Katcher",
     "email": "arthurkatcher@users.noreply.github.com",
@@ -25,8 +25,8 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "X Search via Hermes",
-    "shortDescription": "Search X/Twitter news and posts through Hermes x_search.",
-    "longDescription": "Adds an agent skill for X/Twitter research through Hermes Agent's x_search toolset and xAI/Grok OAuth, including install, authentication, tool-enable, and search branches.",
+    "shortDescription": "Agent Skill for X/Twitter search via Hermes.",
+    "longDescription": "Provides a universal Agent Skill for X/Twitter research through Hermes Agent's x_search toolset and xAI/Grok OAuth, packaged for Codex plugin marketplace installation.",
     "developerName": "Arthur Katcher",
     "category": "Productivity",
     "capabilities": [

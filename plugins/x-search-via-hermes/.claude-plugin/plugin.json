@@ -1,7 +1,7 @@
 {
   "name": "x-search-via-hermes",
   "version": "1.0.0",
-  "description": "Search X/Twitter posts, latest news, social reactions, account posts, and public discussion through Hermes x_search and xAI/Grok OAuth.",
+  "description": "Universal Agent Skill for X/Twitter search through Hermes x_search and xAI/Grok OAuth, installable as a Claude Code plugin.",
   "author": {
     "name": "Arthur Katcher",
     "email": "arthurkatcher@users.noreply.github.com"

@@ -1,13 +1,15 @@
 # X Search via Hermes
 
-Claude Code and Codex plugin for searching X/Twitter posts, latest news,
-social reactions, account posts, and public discussion through Hermes Agent's
-`x_search` toolset and xAI/Grok OAuth.
+Agent Skill for searching X/Twitter posts, latest news, social reactions,
+account posts, and X-sourced public discussion through Hermes Agent's
+`x_search` toolset and xAI/Grok OAuth. It is distributed as a universal
+`SKILL.md` workflow first, with Claude Code and Codex plugin manifests for
+marketplace installation.
 
 Version: `1.0.0`
 
-Keywords: `x-search`, `twitter-search`, `hermes-agent`, `xai`, `grok`,
-`agent-skill`, `claude-code`, `codex-plugin`, `social-search`, `ai-research`
+Keywords: `agent-skill`, `x-search`, `twitter-search`, `hermes-agent`, `xai`,
+`grok`, `claude-code-plugin`, `codex-plugin`, `social-search`, `ai-research`
 
 ## Repository Layout
 
