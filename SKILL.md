@@ -1,0 +1,1 @@
+plugins/x-search-via-hermes/skills/x-search-via-hermes/SKILL.md
