@@ -2,14 +2,26 @@
 
 Agent Skill for searching X/Twitter posts, latest news, social reactions,
 account posts, and X-sourced public discussion through Hermes Agent's
-`x_search` toolset and xAI/Grok OAuth. It is distributed as a universal
-`SKILL.md` workflow first, with Claude Code and Codex plugin manifests for
-marketplace installation.
+X search capability. It is distributed as a universal `SKILL.md` workflow first,
+with Claude Code and Codex plugin manifests for marketplace installation.
 
 Version: `1.0.0`
 
 Keywords: `agent-skill`, `x-search`, `twitter-search`, `hermes-agent`, `xai`,
 `grok`, `claude-code-plugin`, `codex-plugin`, `social-search`, `ai-research`
+
+## What This Skill Allows
+
+This skill helps an agent use Hermes for read-only research on X/Twitter:
+
+- Search current X posts, threads, profiles, and public discussion.
+- Track latest news, announcements, reactions, and rumors on X.
+- Search recent posts from a specific account or handle.
+- Return concise summaries with source links when Hermes provides them.
+- Separate confirmed announcements from speculation or commentary.
+- Check whether Hermes is installed, authenticated, and ready before searching.
+
+It does not post, like, follow, DM, delete, or otherwise mutate an X account.
 
 ## Repository Layout
 
@@ -104,11 +116,23 @@ cp -R plugins/x-search-via-hermes/skills/x-search-via-hermes ~/.agents/skills/
 ## Requirements
 
 - Hermes Agent available as `hermes`
-- Hermes authenticated with xAI/Grok OAuth
-- Hermes `x_search` toolset enabled
+- Hermes authenticated with a Grok-capable account or API key
+- Hermes X search tool enabled
+
+Supported credential paths:
+
+- SuperGrok subscription through xAI OAuth
+- X Premium+ subscription through xAI OAuth
+- X Premium when xAI enables the account for this OAuth/API surface
+- Paid `XAI_API_KEY` as a fallback credential path
+
+Hermes' documented OAuth path is SuperGrok or X Premium+. Access is ultimately
+controlled by xAI account entitlements, so a browser login can succeed while
+Hermes later receives `403` from the API. In that case, use an eligible
+subscription tier or configure a paid `XAI_API_KEY`.
 
 The skill contains branches for installing Hermes, launching xAI auth, verifying
-`x_search`, and running focused X search prompts.
+X search availability, and running focused X search prompts.
 
 ## License
 
