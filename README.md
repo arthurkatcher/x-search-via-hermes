@@ -31,7 +31,8 @@ plugins/x-search-via-hermes/
 
 Claude Code and Codex marketplace files both point at that same plugin root, so
 there is only one canonical `SKILL.md` to maintain. The root `SKILL.md` is a
-symlink for faster browsing on GitHub.
+hard link to the canonical file so GitHub renders the full Markdown content
+instead of just showing a link target path.
 
 ## Install in Claude Code
 
