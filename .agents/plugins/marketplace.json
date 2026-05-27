@@ -1,0 +1,20 @@
+{
+  "name": "x-search-via-hermes-skills",
+  "interface": {
+    "displayName": "X Search via Hermes Skills"
+  },
+  "plugins": [
+    {
+      "name": "x-search-via-hermes",
+      "source": {
+        "source": "local",
+        "path": "./plugins/x-search-via-hermes"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

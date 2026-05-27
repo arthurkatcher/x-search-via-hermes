@@ -1,0 +1,43 @@
+{
+  "name": "x-search-via-hermes",
+  "version": "1.0.0",
+  "description": "Search X/Twitter posts, latest news, social reactions, account posts, and public discussion through Hermes x_search and xAI/Grok OAuth.",
+  "author": {
+    "name": "Arthur Katcher",
+    "email": "arthurkatcher@users.noreply.github.com",
+    "url": "https://github.com/arthurkatcher"
+  },
+  "homepage": "https://github.com/arthurkatcher/x-search-via-hermes",
+  "repository": "https://github.com/arthurkatcher/x-search-via-hermes",
+  "keywords": [
+    "x",
+    "twitter",
+    "x-search",
+    "twitter-search",
+    "hermes",
+    "hermes-agent",
+    "xai",
+    "grok",
+    "search",
+    "social-search",
+    "ai-research"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "X Search via Hermes",
+    "shortDescription": "Search X/Twitter news and posts through Hermes x_search.",
+    "longDescription": "Adds an agent skill for X/Twitter research through Hermes Agent's x_search toolset and xAI/Grok OAuth, including install, authentication, tool-enable, and search branches.",
+    "developerName": "Arthur Katcher",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Research"
+    ],
+    "defaultPrompt": [
+      "Search X for the latest posts about Andrei Karpathy.",
+      "Find recent X reactions to this AI news.",
+      "Search X posts by @handle about this topic."
+    ],
+    "brandColor": "#111111"
+  }
+}

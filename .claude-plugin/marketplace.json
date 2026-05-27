@@ -1,0 +1,25 @@
+{
+  "name": "x-search-via-hermes-skills",
+  "owner": {
+    "name": "Arthur Katcher",
+    "email": "arthurkatcher@users.noreply.github.com"
+  },
+  "metadata": {
+    "description": "Claude Code and Codex plugin for searching X/Twitter posts, latest news, and public discussion through Hermes Agent and xAI/Grok OAuth.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "x-search-via-hermes",
+      "description": "Search X/Twitter posts, latest news, reactions, account posts, and public discussion through Hermes x_search.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Arthur Katcher",
+        "email": "arthurkatcher@users.noreply.github.com"
+      },
+      "category": "productivity",
+      "source": "./plugins/x-search-via-hermes",
+      "homepage": "https://github.com/arthurkatcher/x-search-via-hermes"
+    }
+  ]
+}
