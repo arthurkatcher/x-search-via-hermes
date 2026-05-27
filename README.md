@@ -5,11 +5,6 @@ account posts, and X-sourced public discussion through Hermes Agent's
 X search capability. It is distributed as a universal `SKILL.md` workflow first,
 with Claude Code and Codex plugin manifests for marketplace installation.
 
-Version: `1.0.0`
-
-Keywords: `agent-skill`, `x-search`, `twitter-search`, `hermes-agent`, `xai`,
-`grok`, `claude-code-plugin`, `codex-plugin`, `social-search`, `ai-research`
-
 ## What This Skill Allows
 
 This skill helps an agent use Hermes for read-only research on X/Twitter:
@@ -133,6 +128,13 @@ subscription tier or configure a paid `XAI_API_KEY`.
 
 The skill contains branches for installing Hermes, launching xAI auth, verifying
 X search availability, and running focused X search prompts.
+
+## Metadata
+
+Version: `1.0.0`
+
+Keywords: `agent-skill`, `x-search`, `twitter-search`, `hermes-agent`, `xai`,
+`grok`, `claude-code-plugin`, `codex-plugin`, `social-search`, `ai-research`
 
 ## License
 
