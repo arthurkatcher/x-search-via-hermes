@@ -1,11 +1,11 @@
 # X Search via Hermes
 
-**[→ View canonical SKILL.md](plugins/x-search-via-hermes/skills/x-search-via-hermes/SKILL.md)**
-
 Agent Skill for searching X/Twitter posts, latest news, social reactions,
 account posts, and X-sourced public discussion through Hermes Agent's
 X search capability. It is distributed as a universal `SKILL.md` workflow first,
 with Claude Code and Codex plugin manifests for marketplace installation.
+
+**[→ View canonical SKILL.md](plugins/x-search-via-hermes/skills/x-search-via-hermes/SKILL.md)**
 
 ## What This Skill Allows
 
