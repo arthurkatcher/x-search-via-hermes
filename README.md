@@ -18,22 +18,6 @@ This skill helps an agent use Hermes for read-only research on X/Twitter:
 
 It does not post, like, follow, DM, delete, or otherwise mutate an X account.
 
-## Repository Layout
-
-The canonical skill lives inside one shared plugin package:
-
-```text
-plugins/x-search-via-hermes/
-  .claude-plugin/plugin.json
-  .codex-plugin/plugin.json
-  skills/x-search-via-hermes/SKILL.md
-```
-
-Claude Code and Codex marketplace files both point at that same plugin root, so
-there is only one canonical `SKILL.md` to maintain. The root `SKILL.md` is a
-hard link to the canonical file so GitHub renders the full Markdown content
-instead of just showing a link target path.
-
 ## Install in Claude Code
 
 Register this repository as a Claude Code plugin marketplace:
