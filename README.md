@@ -7,6 +7,10 @@ with Claude Code and Codex plugin manifests for marketplace installation.
 
 **[→ View canonical SKILL.md](plugins/x-search-via-hermes/skills/x-search-via-hermes/SKILL.md)**
 
+> The skill is deliberately placed under `plugins/x-search-via-hermes/skills/x-search-via-hermes/`
+> so the same repository can serve as both a Claude Code and Codex plugin marketplace
+> from a single canonical `SKILL.md`. This avoids duplication and symlink issues on GitHub.
+
 ## What This Skill Allows
 
 This skill helps an agent use Hermes for read-only research on X/Twitter:
