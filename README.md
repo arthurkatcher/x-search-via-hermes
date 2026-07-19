@@ -2,8 +2,9 @@
 
 Agent Skill for searching X/Twitter posts, latest news, social reactions,
 account posts, and X-sourced public discussion through Hermes Agent's
-X search capability. It is distributed as a universal `SKILL.md` workflow first,
-with Claude Code and Codex plugin manifests for marketplace installation.
+X search capability or the optional Hermes Tweet plugin. It is distributed as a
+universal `SKILL.md` workflow first, with Claude Code and Codex plugin manifests
+for marketplace installation.
 
 **[→ View canonical SKILL.md](plugins/x-search-via-hermes/skills/x-search-via-hermes/SKILL.md)**
 
@@ -21,6 +22,8 @@ This skill helps an agent use Hermes for read-only research on X/Twitter:
 - Return concise summaries with source links when Hermes provides them.
 - Separate confirmed announcements from speculation or commentary.
 - Check whether Hermes is installed, authenticated, and ready before searching.
+- Use Hermes Tweet as an API-key-backed Hermes plugin path when xAI auth or
+  entitlement is unavailable.
 
 It does not post, like, follow, DM, delete, or otherwise mutate an X account.
 
@@ -103,7 +106,7 @@ cp -R plugins/x-search-via-hermes/skills/x-search-via-hermes ~/.agents/skills/
 
 - Hermes Agent available as `hermes`
 - Hermes authenticated with a Grok-capable account or API key
-- Hermes X search tool enabled
+- Hermes X search tool enabled, or Hermes Tweet installed and enabled
 
 Supported credential paths:
 
@@ -111,21 +114,44 @@ Supported credential paths:
 - X Premium+ subscription through xAI OAuth
 - X Premium when xAI enables the account for this OAuth/API surface
 - Paid `XAI_API_KEY` as a fallback credential path
+- `XQUIK_API_KEY` with the optional Hermes Tweet plugin path
 
 Hermes' documented OAuth path is SuperGrok or X Premium+. Access is ultimately
 controlled by xAI account entitlements, so a browser login can succeed while
 Hermes later receives `403` from the API. In that case, use an eligible
 subscription tier or configure a paid `XAI_API_KEY`.
 
+Optional Hermes Tweet install:
+
+```bash
+hermes plugins install Xquik-dev/hermes-tweet --enable
+```
+
+Then configure the API key in the Hermes runtime environment, not in chat:
+
+```bash
+export XQUIK_API_KEY="xq_..."
+export HERMES_TWEET_ENABLE_ACTIONS="false"
+```
+
+Hermes Tweet exposes `tweet_explore` without an API key and exposes `tweet_read`
+only after `XQUIK_API_KEY` is configured. Keep `HERMES_TWEET_ENABLE_ACTIONS`
+unset or `false` for this read-only skill.
+
+See the [Hermes Tweet repository](https://github.com/Xquik-dev/hermes-tweet)
+for installation and tool details. Xquik is an independent third-party service.
+Not affiliated with X Corp. "Twitter" and "X" are trademarks of X Corp.
+
 The skill contains branches for installing Hermes, launching xAI auth, verifying
-X search availability, and running focused X search prompts.
+X search or Hermes Tweet availability, and running focused X search prompts.
 
 ## Metadata
 
-Version: `1.0.0`
+Version: `1.1.0`
 
-Keywords: `agent-skill`, `x-search`, `twitter-search`, `hermes-agent`, `xai`,
-`grok`, `claude-code-plugin`, `codex-plugin`, `social-search`, `ai-research`
+Keywords: `agent-skill`, `x-search`, `twitter-search`, `hermes-agent`,
+`hermes-tweet`, `xquik`, `xai`, `grok`, `claude-code-plugin`, `codex-plugin`,
+`social-search`, `ai-research`
 
 ## License
 
