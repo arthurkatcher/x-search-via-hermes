@@ -1,7 +1,7 @@
 {
   "name": "x-search-via-hermes",
-  "version": "1.0.0",
-  "description": "Universal Agent Skill for X/Twitter search through Hermes, installable as a Claude Code plugin.",
+  "version": "1.1.0",
+  "description": "Universal Agent Skill for read-only X/Twitter search through Hermes built-in search or Hermes Tweet.",
   "author": {
     "name": "Arthur Katcher",
     "email": "arthurkatcher@users.noreply.github.com"

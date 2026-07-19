@@ -1,7 +1,7 @@
 {
   "name": "x-search-via-hermes",
-  "version": "1.0.0",
-  "description": "Universal Agent Skill for X/Twitter search through Hermes, installable as a Codex plugin.",
+  "version": "1.1.0",
+  "description": "Universal Agent Skill for read-only X/Twitter search through Hermes built-in search or Hermes Tweet.",
   "author": {
     "name": "Arthur Katcher",
     "email": "arthurkatcher@users.noreply.github.com",
@@ -16,6 +16,8 @@
     "twitter-search",
     "hermes",
     "hermes-agent",
+    "hermes-tweet",
+    "xquik",
     "xai",
     "grok",
     "search",
@@ -26,7 +28,7 @@
   "interface": {
     "displayName": "X Search via Hermes",
     "shortDescription": "Agent Skill for X/Twitter search via Hermes.",
-    "longDescription": "Provides a universal Agent Skill for read-only X/Twitter research through Hermes Agent, packaged for Codex plugin marketplace installation.",
+    "longDescription": "Provides read-only X/Twitter research through Hermes built-in search or the optional Hermes Tweet plugin.",
     "developerName": "Arthur Katcher",
     "category": "Productivity",
     "capabilities": [
